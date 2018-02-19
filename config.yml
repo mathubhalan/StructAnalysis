@@ -1,0 +1,21 @@
+Path:
+ BaseFolder: "D:/PDF/MK"
+ InputFile: "D:/PDF/MK/pril_de.csv" #input URLS to generate the PDF
+ SnapFolder: "D:/PDF/MK/Images" # output folder where we have the PDFs
+
+BrowsName: Chrome
+FixedHeader: navigation full-width # give the class for fixed header to avid getting snapped
+#var list, index;list = document.getElementsByClassName('navigation full-width');for (index = 0; index < list.length; ++index) {list[index].setAttribute('style', 'position: absolute; top: 0px;');}
+
+
+#Login:
+ #LoginPath: "https://gskstaging7:Health4All@health-gsk-com-au-preprod-cf5.gdsgsk.com/login/login_link.html"
+ #Credentials: "sivaram.manikandan@gmail.com/Siva@321"
+ #selector: "by ID"
+ #form_user_name: "gigya-loginID-84552255963300880"
+ #form_user_pass: "gigya-password-61603359317276400"
+ #form_user_submit: "//*[@id='gigya-reset-password-form']/div[4]/div[2]/input"
+
+#conditions:
+ #URL:
+ #con:
