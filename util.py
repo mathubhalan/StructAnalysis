@@ -43,7 +43,7 @@ def fullpage_screenshot(driver, folder_path, title):
 
         for rectangle in rectangles:
             if not previous is None:
-                driver.execute_script("window.scrollTo({0}, {1})".format(rectangle[0], rectangle[1]))
+                driver.execute_script("window.scrollTo({0}, {1})".format(rectangle[0], rectangle[1]))				
                 #driver.execute_script("var list, index;list = document.getElementsByClassName('header-elements');for (index = 0; index < list.length; ++index) {list[index].setAttribute('style', 'position: absolute; top: 0px;');}")
                 #print("Scrolled To ({0},{1})".format(rectangle[0], rectangle[1]))
                 time.sleep(0.2)
@@ -73,7 +73,7 @@ def fullpage_screenshot(driver, folder_path, title):
         #final_imagename = folder_path+"/"+title+"_snap.png"
         #stitched_image.save(final_imagename)       
         #print("{} Finishing full page screenshot workaround...".format(final_imagename))
-        outfile = folder_path+"/"+title+"_snap.png"
+        outfile = folder_path+"/"+title+".png"
         stitched_image.save(outfile, "PNG", Quality = 100)
         #print("PNG converted..")
         return True
