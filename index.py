@@ -36,8 +36,11 @@ def gen_ScreenSnap(method=None):
         driver.get(url.strip())
         time.sleep(2)
         pg_title = driver.title
-        pg_title = re.sub('[^a-zA-Z0-9-_!@#$©*.]', '',pg_title)
+        pg_title = helpers.slugify(pg_title)
+        #pg_title = re.sub('[^a-zA-Z0-9-_!@#©|?|$|.|!*.]', '',pg_title)
         pg_title = b_name+"_"+str(i)+ "_"+ pg_title
+        if len(pg_title)>240:
+            pg_title = pg_title[0:239]
         print(pg_title)
         if (method =="wireframe"):
              #pyautogui to click on the extension

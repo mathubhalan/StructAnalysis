@@ -1,5 +1,5 @@
 Path:
- InputFile: "D:/PDF/MK/agorex_cl.csv" #input URLS to generate the PDF
+ InputFile: "D:/PDF/MK/alternahaircare_com.csv" #input URLS to generate the PDF
  SnapFolder: "D:/PDF/MK/Images" # output folder where we have the PDFs
  
 BrowsName: "Chrome"

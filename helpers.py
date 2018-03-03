@@ -4,7 +4,7 @@ Created on Fri Mar  2 13:43:09 2018
 
 @author: Mathu_Gopalan
 """
-import glob, cv2, yaml, os
+import glob, cv2, yaml, os, re
 
 
 def createcanny(inputpath,outputpath):
@@ -49,9 +49,12 @@ def createFolders(fol_loc):
         if not os.path.exists(v):
             os.makedirs(v)
             print("Folder Created {:}".format(v))
-    
-               
-    
-        
-    
-                
+
+def slugify(title):
+    name = title.replace(' ', '-').lower()
+    #remove `other` characters
+    name = re.sub('[^a-zA-Z0-9_-]','', name)
+    #nomalize dashes
+    name = re.sub('-+', '-', name)
+    print(name)
+    return name     
