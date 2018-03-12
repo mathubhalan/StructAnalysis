@@ -1,6 +1,6 @@
 Path:
- InputFile: "D:/PDF/MK/alternahaircare_com.csv" #input URLS to generate the PDF
- SnapFolder: "D:/PDF/MK/Images" # output folder where we have the PDFs
+ InputFile: "D:/PDF/StructAnalysis/Input/quit_com.csv" #input URLS to generate the PDF
+ SnapFolder: "D:/PDF/test1/" # output folder where we have the PDFs
  
 BrowsName: "Chrome"
 ExtensionPath: "C:/Users/mathu_gopalan/AppData/Local/Google/Chrome/User Data/Default/Extensions/denkephjglddepmhdlaaigjionglkdbb/1.0.1_0/" #update the extension path
